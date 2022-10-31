@@ -1,8 +1,13 @@
 module.export = {
 	module: {
-		rules: [{
-			test: /\.js$/,
-			loader: 'babel-loader'
-		}]
+		rules: [
+			{
+				test: /\.js$/,
+				loader: 'babel-loader',
+				options: {
+					presents: ['@babel/preset-react']
+				}
+			}
+		]
 	}
 }
